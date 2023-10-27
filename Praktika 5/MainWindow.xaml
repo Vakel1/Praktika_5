@@ -1,0 +1,17 @@
+﻿<Window x:Class="DrawingApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Drawing App" Height="400" Width="600">
+    <Grid>
+        <Canvas Name="drawingCanvas" Background="White"
+                MouseLeftButtonDown="OnCanvasMouseDown" 
+                MouseMove="OnCanvasMouseMove" 
+                MouseLeftButtonUp="OnCanvasMouseUp"/>
+        <Button Content="Line" Click="OnLineButtonClick" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <Button Content="Circle" Click="OnCircleButtonClick" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,10,0,0"/>
+        <Button Content="Square" Click="OnSquareButtonClick" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,10,0,0"/>
+        <Button Content="Очистить" Click="OnClearButtonClick" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,10,0,0"/>
+
+    </Grid>
+</Window>
+ 
